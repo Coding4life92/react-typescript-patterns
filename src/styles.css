@@ -1,0 +1,27 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #222;
+    width: 500px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, .6);
+}
+
+thead tr {
+    background-color: royalblue;
+    color: #f1f1f1;
+}
+
+thead th,
+tbody tr td {
+    text-align: left;
+    border: 1px solid #222;
+    padding: 10px;
+}

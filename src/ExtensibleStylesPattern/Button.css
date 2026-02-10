@@ -1,0 +1,35 @@
+.Button {
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.small {
+    padding: 4px 8px;
+}
+
+.medium {
+    padding: 8px 16px;
+}
+
+.large {
+    padding: 12px 24px;
+}
+
+.blue {
+    background-color: blue;
+    color: white;
+}
+
+.red {
+    background-color: red;
+    color: white;
+}
+
+.green {
+    background-color: green;
+    color: white;
+}
