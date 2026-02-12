@@ -10,7 +10,6 @@ Whether you're leveling up as a frontend engineer or preparing for interviews, t
 
 - **React** (Functional Components)
 - **TypeScript**
-- **Modern Hooks API**
 - **Vite**
 
 ---
