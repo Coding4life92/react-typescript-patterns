@@ -21,6 +21,7 @@ The table below summarizes each pattern, its purpose, and common use cases.
 
 | Pattern | Description | When to Use |
 |-------|------------|------------|
+| **Custom Hook Pattern** | Extracts reusable stateful logic into composable functions | When logic needs to be shared without altering component structure
 | **Compound Components Pattern** | Components share implicit state via context, allowing flexible composition | When you want expressive JSX APIs like `<Tabs><Tab /></Tabs>` |
 | **Control Props Pattern** | Gives consumers full control over component state | When a component needs to work in both controlled and uncontrolled modes |
 | **Extensible Styles Pattern** | Allows styles to be extended or overridden cleanly | When building reusable UI components or design systems |
@@ -31,6 +32,19 @@ The table below summarizes each pattern, its purpose, and common use cases.
 ---
 
 ## Pattern Breakdown
+
+### Custom Hook Pattern
+
+Extracts reusable stateful logic into composable functions without changing component hierarchy.
+
+Instead of wrapping components (like HOCs) or passing functions (like Render Props), custom hooks allow logic reuse through simple function composition.
+
+**Example Use Case:** 
+- Data fetching (useFetch)
+- Form state management
+- Debouncing
+- Local storage syncing
+- Media queries
 
 ### Compound Components Pattern
 Allows components to work together by sharing state implicitly, usually through React Context.
