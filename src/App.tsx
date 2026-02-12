@@ -1,5 +1,6 @@
 import Table, { type Column } from "./PropsGettersPattern/Table";
 import Joke from "./CustomHookPattern/Example";
+import TodoList from "./StateReducerPattern/TodoList";
 
 const App: React.FC = () => {
     const columns: Column[] = [
@@ -18,6 +19,7 @@ const App: React.FC = () => {
         <>
             <Joke />
             <Table columns={columns} data={data} />
+            <TodoList />
         </>
     );
 };
