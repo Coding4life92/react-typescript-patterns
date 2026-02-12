@@ -1,4 +1,5 @@
 import Table, { type Column } from "./PropsGettersPattern/Table";
+import Joke from "./CustomHookPattern/Example";
 
 const App: React.FC = () => {
     const columns: Column[] = [
@@ -13,7 +14,12 @@ const App: React.FC = () => {
         { name: 'Bob', age: 35, country: 'UK' },
     ];
 
-    return <Table columns={columns} data={data} />;
+    return (
+        <>
+            <Joke />
+            <Table columns={columns} data={data} />
+        </>
+    );
 };
 
 export default App;
