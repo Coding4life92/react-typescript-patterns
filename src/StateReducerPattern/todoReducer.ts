@@ -14,7 +14,7 @@ interface State {
     todos: Todo[];
 }
 
-// Reucing function to handle actions and update state
+// Reducer function to handle actions and update state
 const reducer = (state: State, action: Action): State => {
     switch (action.type) {
         case 'ADD_TODO':
